@@ -1,0 +1,27 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1f2937;
+}
+
+
+.header{
+    margin: 50px;
+}
+.header .logo{
+    font-size: 24px;
+    color: #f9faf8;
+    display: inline-block;
+}
+.header ul{
+    display: inline-flex;
+    color: #f9faf8;
+    list-style: none;
+    float: right;
+    flex: auto;
+    margin-top: 45px;
+    margin-right: 20px;
+
+}
+.header ul li{
+    margin: 15px;
+}

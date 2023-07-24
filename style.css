@@ -1,14 +1,15 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #1f2937;
+    background-color: #1f1f1f;
 }
 
 
 .header{
     margin: 50px;
+
 }
 .header .logo{
-    font-size: 24px;
+    font-size: 18px;
     color: #f9faf8;
     display: inline-block;
 }
@@ -18,10 +19,97 @@
     list-style: none;
     float: right;
     flex: auto;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-right: 20px;
 
 }
 .header ul li{
     margin: 15px;
+}
+
+.header ul li::after{
+    content:"";
+    height:2px;
+    background-color:aquamarine;
+    display:block;
+    opacity:0.7;
+    width:0%;
+}
+
+.header ul li:hover::after{
+    width:100%;
+}
+
+.content-1{
+    display:flex;
+    color:f9faf8;
+    background-color:#1f2937;
+    align-items:center; /*aligns items to center of 
+    div container */
+    justify-content: center;
+    padding: 20px 90px 90px 90px;
+}
+.content-1 .left h1{
+    margin-right: 50px;
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.content-1 .left p1{
+    color: #f9faf8;
+    opacity:0.7;
+    font-size: 18px;
+}
+
+.content-1 .left{
+    margin-right:5vh;
+}
+
+.content-1 .left button{
+    background-color:turquoise;
+    color:white;
+    border:0;
+    border-radius:10%;
+    height:35px;
+    width:100px;
+}
+
+.content-1 .right img{
+    height: 30vh;
+}
+
+.content-2{
+    padding:15px 90px 90px 90px;
+    background-color:#f9faf8;;
+}
+
+.content-2 h1{
+    color: #1f2937;
+    background-color:#f9faf8;;
+    text-align:center;
+    padding:10px 0px 20px 0px;
+    font-size:x-large;
+}
+
+.content-2 .img-container{
+    display:flex;
+    justify-content: space-around;
+    background-color:#f9faf8;;
+    
+}
+
+.content-2 .img-container img{
+    height:200px;
+    width:200px;
+    object-fit:cover; /*stops the images from being stretched*/
+    border-radius: 10%;
+    border:turquoise solid 2px;
+    z-index:0;
+    transition:0.25s;
+}
+
+.content-2 .img-container img:hover{
+    transform:scale(1.5);
+    z-index:1;
+    transition:0.25s;
 }
